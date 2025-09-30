@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first website</title>
+    <title>Information form</title>
 </head>
 <body>
-    <h1>Hello everyone </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos numquam hic fugit veritatis ex similique molestias quisquam dolor, exercitationem ipsum? Eos voluptas vero eum hic, fugiat nostrum nulla tempora.</p>
+    <h1>Namaste , </h1>
+    <p>This is required denotedby *</p>
+    <form action="">
+     <fieldset>
+           <legend>Sign Up form</legend>
+        <p>Name : *<input type="text" name="name" required></p>
+        <p>Surename : <input type="text" name="Surename"></p>
+        <p>DOB : <input type="date" name="dob" id="dob" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+             <p>Gender : Male <input type="radio" name="Gender" id="male"> Female <input type="radio" name="Gender" id="female"></p>
+        <p>Email : <input type="email" name="email" id="Email" required></p>
+        </fieldset>
+        <p>Address : <input type="text" name="Address"></p>
+        <p><input type="button" value="Submit"></p>
+     </fieldset>
+     <fieldset>
+        <legend>Payment Deatails</legend>
+        <h2>Payment details</h2>
+     <p>Card Type : <select name="card-type" id="card-type">
+        <option value="">--select card--</option>
+        <option value="master-card">Master card</option>
+        <option value="visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+     </select>
+     <p>Card Number : <input type="number" name="card-number" id="card-number"></p>
+     <p>Expiry Date : <input type="date" name="Expiry" id="Expiry"> </p>
+     <p>CVV : <input type="password" name="cvv" id="cvv"></p>
+     <p><input type="button" value="Pay Now"></p>
+     </fieldset>
+    </form>
     
 </body>
 </html>
